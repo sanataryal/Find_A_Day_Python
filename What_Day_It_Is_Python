@@ -1,0 +1,20 @@
+import datetime
+wd = ['Monday' 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+name = input("Enter Your Name, Please: ")
+while True:
+
+    year= int(input("Enter the date here (format: YYYY): "))
+    month = int(input("Enter the month (format: 1-12): "))
+    day = int(input("Enter the day (format: 1 - 32): "))
+    m = datetime.datetime(year, month, day)
+    q = m.strftime('%A')
+    s = m.strftime('%x')
+    print(f'Hey {name}, the day is {q} for {s} and')
+    if q in wd:
+        print("It is a weekday :).")
+    else:
+        print("It is a weekend :).")
+
+
+
+
